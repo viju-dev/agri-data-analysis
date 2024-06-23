@@ -73,6 +73,9 @@ src/
 ![Screenshot (20846)](https://github.com/viju-dev/agri-data-analysis/assets/71461702/eb04eec7-bdd2-486b-a649-7a9b0ac0ff5f)
 ![Screenshot (20847)](https://github.com/viju-dev/agri-data-analysis/assets/71461702/5eb4d907-aa25-43ea-91fc-a86071dcc3db)
 
+### Error Handling
+![image](https://github.com/viju-dev/agri-data-analysis/assets/71461702/bf44ad43-1f8e-4f00-abc7-5f403b879d7a)
+
 
 ## Technologies Used
 
