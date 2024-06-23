@@ -1,46 +1,82 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Agricultural Data Analysis
 
-## Available Scripts
+This project is designed to analyze agricultural data from the National Data and Analytics Platform, NITI Aayog, and display it in a user-friendly way using tables. The application is built using React and styled with Mantine. The tables display the crop with the maximum and minimum production for each year, as well as the average yield and cultivation area for each crop between 1950-2020.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `yarn start`
+- [Features](#features)
+- [Installation](#installation)
+- [Running the Project](#running-the-project)
+- [Project Structure](#project-structure)
+- [Screenshots](#screenshots)
+- [Technologies Used](#technologies-used)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
 
-### `yarn test`
+- Display maximum and minimum crop production per year.
+- Calculate and display average yield and cultivation area per crop (1950-2020).
+- Styled using Mantine for a clean and modern look.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `yarn build`
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd agri-data-analysis
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies using Yarn:
+   ```bash
+   yarn install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running the Project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Ensure you are in the project directory.
+2. Start the development server:
+   ```bash
+   yarn start
+   ```
 
-### `yarn eject`
+The application will launch in your default web browser at `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Project Structure
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+public/
+├── agroDataset.json
+src/
+├── components/
+│   ├── MaxMinTable.tsx
+│   └── AverageTable.tsx
+├── hooks/
+│   └── useAgroData.tsx
+│── App.css
+├── App.tsx
+├── index.tsx
+├── index.css
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- `components/`: Contains React components for displaying tables.
+- `agroDataset.json`: Contains the agricultural dataset.
+- `hooks/`: Contains custom hooks for loading and processing data.
+- `App.css`: Contains global CSS styles.
+- `App.tsx`: Main app component.
+- `index.tsx`: Entry point for the React app.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Screenshots
 
-## Learn More
+### Main Application View
+![Screenshot (20845)](https://github.com/viju-dev/agri-data-analysis/assets/71461702/c2617d67-a43f-4493-85b1-1a57d1e0699f)
+![Screenshot (20846)](https://github.com/viju-dev/agri-data-analysis/assets/71461702/eb04eec7-bdd2-486b-a649-7a9b0ac0ff5f)
+![Screenshot (20847)](https://github.com/viju-dev/agri-data-analysis/assets/71461702/5eb4d907-aa25-43ea-91fc-a86071dcc3db)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies Used
+
+- **React**: A JavaScript library for building user interfaces.
+- **Mantine**: An extensive library of React components and hooks for building modern web applications.
+- **TypeScript**: A strongly typed programming language that builds on JavaScript.
+- **Yarn**: A package manager for JavaScript.
